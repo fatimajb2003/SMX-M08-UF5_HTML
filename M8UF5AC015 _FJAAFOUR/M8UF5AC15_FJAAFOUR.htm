@@ -1,0 +1,71 @@
+ <!DOCTYPE html>
+ <html lang="cat">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Formulari</title>
+     <script type="text/javascript">
+        function validar() {
+            var psswd = document.getElementById("psswd").value;
+            var confpsswd = document.getElementById("confpsswd").value;
+            if (psswd == confpsswd) {
+                return true;
+            }
+            else {
+
+                alert("La contrasenya no coincideix");
+                return false;
+            }
+        }
+    </script>
+</head>
+ <body style="font-family: Verdana;">
+     <br>
+     <from action="mailto:fatima.jaafour2@inslapineda.cat" method="GET" onsubmit="return validar()";>
+        <input type="hidden" name="id" id="id" value="123">
+        <table align="center" style="background-color: #EFEFEF; padding: 0%;">
+            <tr style="background-color: #306090; color: white;">
+                <td colspan="3"><strong>&nbsp;Enviar misatge</strong> <img src="../M8UF5AC015 _FJAAFOUR/img/imatge1.gif" alt="imatge1" align="right"></td>
+            </tr>
+            <tr>
+                <td align="right">Nom:</td>
+                <td><input type="text" name="Nom" id="Nom" maxlength="8"required></td>
+            </tr>
+            <tr>
+                <td align="right">Email:</td>
+                <td><input type="text" name="email" id="email" required></td>
+            </tr>
+            <tr>
+                <td align="right">Arxiu:</td>
+                <td><input type="text" name="text_Arxiu" id=" text_Arxiu"></td>
+                <td><input type="file" name="arxius" id="arxius"></td>
+            </tr>
+            <tr>
+                <td align="right">Imatge:</td>
+                <td><input type="text" name="text_Imatge" id=" text_Imatge"></td>
+                <td><input type="file" name="Imatge" id="Imatge"></td>
+            </tr>
+            <tr>
+                <td colspan="3" align="center" style="font-size: small;">El tamany de l'arxiu i la imatge no pot excedir els 4 KBytes</td>
+            </tr>
+            <tr>
+                <td align="center" style="font-size: small;" colspan="3"><strong>Requereix: resposta: <input type="radio" name="resposta" id="Si" value="Sí" required>Sí <input type="radio" id="No" value="No">No</strong></td>
+            </tr>
+            <tr>
+                <td align="right"> jocs t'interessen?</td>
+                <td><input type="checkbox" name="Jocs t'interesen" id="int-1">FIFA <br> <input type="checkbox" name="jocs t'interesen" id="int-2">Elden Ring <br> <input type="checkbox" name="jocs t'interresen" id="int-3">NBA2K2021 <br> <input type="checkbox" name="jocs t'interesen" id="int-4">League of Legends</td>
+            </tr>
+            <tr>
+                <td colspan="3" style="font-size: large;" align="center">Missatge</td>
+            </tr>
+            <tr>
+                <td colspan="3" align="center"><textarea name="Descripció" id="Descripció" cols="45" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="3" align="center"><input type="submit" value="Enviar"><input type="reset" value="Borrar"></td>
+            </tr>   
+        </table>
+    </from>
+ </body>
+ </html>
